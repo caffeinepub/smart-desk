@@ -1,0 +1,49 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Smart Desk site: update domain and add pamphlet/images section to Home page",
+  "requirements": [
+    {
+      "id": "REQ-8",
+      "summary": "Update centralized institute website domain to www.smartdesk7.com so Footer and Contact page links update consistently.",
+      "acceptanceCriteria": [
+        "frontend/src/content/instituteDetails.ts sets website to \"www.smartdesk7.com\".",
+        "The website link shown in the Site Footer opens https://www.smartdesk7.com in a new tab.",
+        "The website link shown on the Contact page opens https://www.smartdesk7.com in a new tab."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/content/instituteDetails.ts",
+          "operation": "modify",
+          "description": "Replace the existing instituteDetails.website value (currently \"www.smartdesk.in\") with exactly \"www.smartdesk7.com\" so all consumers (e.g., SiteFooter, ContactPage) display/link the updated domain consistently."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Add the uploaded pamphlet and image as public static assets and show them in a dedicated, responsive Home page section with larger-view support.",
+      "acceptanceCriteria": [
+        "Both images are added to the repository under a public static path (e.g., frontend/public/assets/uploads/ or similar) and load correctly in the browser.",
+        "Home page includes a clearly labeled section that displays both images with appropriate alt text (English).",
+        "Images are responsive (fit on mobile/desktop without overflowing) and can be viewed at larger size (e.g., open in a new tab or via an in-page viewer/modal)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/uploads/SDPH-1.jpg",
+          "operation": "create",
+          "description": "Add the user-uploaded pamphlet image as a public static asset so it can be referenced by the Home page section."
+        },
+        {
+          "path": "frontend/public/assets/uploads/1000_F_755840623_3JuwWAI0IdvB5xOmCIqvUZmPyfLoHd3M-1.jpg",
+          "operation": "create",
+          "description": "Add the user-uploaded image as a public static asset so it can be referenced by the Home page section."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Add a dedicated, clearly labeled section on the Home page that displays both uploaded images from frontend/public/assets/uploads/SDPH-1.jpg and frontend/public/assets/uploads/1000_F_755840623_3JuwWAI0IdvB5xOmCIqvUZmPyfLoHd3M-1.jpg with English alt text, responsive layout (no overflow on mobile/desktop), and a larger-view option by linking each image to its full-size asset in a new tab (target=\"_blank\" + rel=\"noopener noreferrer\")."
+        }
+      ]
+    }
+  ]
+}

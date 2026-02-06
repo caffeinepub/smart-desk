@@ -1,0 +1,57 @@
+{
+  "kind": "build_request",
+  "title": "Update website domain to www.smartdesk7.com and add uploaded pamphlet + image to the site",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-8",
+      "text": "Update the institute website domain everywhere it is displayed/linked to use exactly \"www.smartdesk7.com\" (replacing the previous value \"www.smartdesk.in\") using the centralized institute details content so the footer and Contact page website link update consistently.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "change my website name as www.smartdesk7.com."
+        ]
+      },
+      "acceptanceCriteria": [
+        "frontend/src/content/instituteDetails.ts sets website to \"www.smartdesk7.com\".",
+        "The website link shown in the Site Footer opens https://www.smartdesk7.com in a new tab.",
+        "The website link shown on the Contact page opens https://www.smartdesk7.com in a new tab."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Add the two user-uploaded images (\"SDPH-1.jpg\" pamphlet and \"1000_F_755840623_3JuwWAI0IdvB5xOmCIqvUZmPyfLoHd3M-1.jpg\") into the frontend as static assets and display them on the website in a dedicated section on the Home page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "and also add above both pamphlet and image in webisite"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Both images are added to the repository under a public static path (e.g., frontend/public/assets/uploads/ or similar) and load correctly in the browser.",
+        "Home page includes a clearly labeled section that displays both images with appropriate alt text (English).",
+        "Images are responsive (fit on mobile/desktop without overflowing) and can be viewed at larger size (e.g., open in a new tab or via an in-page viewer/modal)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Backend must remain single-actor; do not introduce additional canisters/services.",
+    "Do not modify any files under frontend immutablePaths (e.g., frontend/src/main.tsx, frontend/src/hooks/useActor.ts, frontend/src/components/ui/*).",
+    "Keep the website link format consistent with existing behavior (href uses https:// + domain and opens in a new tab)."
+  ],
+  "nonGoals": [
+    "No changes to Motoko backend logic or enquiry storage/retrieval.",
+    "No new authentication or third-party integrations.",
+    "No requirement to redesign the overall theme beyond what is necessary to place and style the new images section."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

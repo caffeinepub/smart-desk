@@ -1,0 +1,18 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup for Home, Courses, About, and Contact pages, wrapped in a root layout with shared header and footer.",
+  "frontend/src/pages/HomePage.tsx": "Home page featuring hero section with banner image, institute highlights, course category previews, a new dedicated section displaying the course pamphlet and student success images with full-size view capability, and call-to-action sections promoting SMART DESK.",
+  "frontend/src/pages/CoursesPage.tsx": "Courses page displaying the full course catalog organized by three categories (Basic, Programming, Design) with course cards showing names, descriptions, and topics.",
+  "frontend/src/pages/AboutPage.tsx": "About page presenting SMART DESK's mission, vision, offerings, and target audience with structured cards and informative content.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with institute location/contact details (including website link) and a validated enquiry form that submits to the backend, showing success/error states.",
+  "frontend/src/components/site/SiteHeader.tsx": "Site header component with SMART DESK logo, desktop navigation menu, mobile sheet menu, and prominent \"Enquire Now\" button.",
+  "frontend/src/components/site/SiteFooter.tsx": "Site footer with branding, quick links, course categories, contact information (including website link), and caffeine.ai attribution.",
+  "frontend/src/components/site/PageLayout.tsx": "Simple page layout wrapper component providing consistent structure for all pages.",
+  "frontend/src/content/instituteDetails.ts": "Centralized source of truth for SMART DESK contact information including address, phone numbers, email, and website (www.smartdesk7.com).",
+  "frontend/src/content/coursesCatalog.ts": "Complete course catalog data structure with three categories (Basic, Programming, Design) containing detailed course information.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for future React Query hooks; currently empty as public site doesn't need data fetching queries.",
+  "frontend/src/hooks/useSubmitEnquiry.ts": "React Query mutation hook for submitting enquiry forms to the backend with proper error handling.",
+  "frontend/src/utils/enquiryValidation.ts": "Client-side validation logic for enquiry form fields with clear English error messages.",
+  "frontend/src/utils/courseCategoryMapping.ts": "Helper function to map form course category selections to backend CourseCategory type structure.",
+  "frontend/src/index.css": "Global styles with emerald/teal OKLCH color system for both light and dark modes, avoiding blue/purple palette.",
+  "frontend/tailwind.config.js": "Tailwind configuration with Inter font family and extended theme matching the emerald/teal color system."
+}

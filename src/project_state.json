@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Website for SMART DESK computer training institute (Hyderabad) with full course listings and contact/enquiry section, updated to use/display the new website domain www.smartdesk7.com, and include a pamphlet and additional image on the website.",
+  "architectural_notes": [
+    "Public contact info to display: phones (9966116082, 9966116087, 7095997081) and email (smartdesk007@gmail.com).",
+    "Institute address to display: South Kamala Nagar, ECIL, Opp ECIL Bus Stop, Above Apollo Pharmacy Building, 1st Floor, Hyderabad, Telangana 500062.",
+    "Official website domain to display/use: www.smartdesk7.com"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-multi-page-institute-website-for-the-computer-training-institute-named-smart-desk-with-clear-navigation-and-sections-for-home-courses-about-institute-and-contact-enquiry",
+      "title": "Create a multi-page institute website for the computer training institute named “SMART DESK” with clear navigation and sections for Home, Courses, About/Institute, and Contact/Enquiry.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-institute-details-and-display-them-on-relevant-pages-address-location-and-contact-details-phone-numbers-and-email-address-to-use-south-kamala-nagar-ecil-opp-ecil-bus-stop-above-appolo-pharmacy-building-1st-floor-hyderabad-telangana-500062-phone-numbers-to-display-9966116082-9966116087-7095997081-email-to-display-smartdesk007-gmail-com",
+      "title": "Add institute details and display them on relevant pages: address/location and contact details (phone numbers and email). Address to use: “South Kamala Nagar, ECIL, Opp ECIL Bus stop, Above Appolo Pharmacy Building, 1st Floor, Hyderabad, Telangana 500062”. Phone numbers to display: 9966116082, 9966116087, 7095997081. Email to display: smartdesk007@gmail.com.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-full-course-catalog-page-that-organizes-courses-into-categories-and-displays-course-cards-lists-include-at-minimum-these-categories-and-example-items-from-the-user-basic-computer-courses-dca-adca-ms-office-data-entry-typing-spoken-english-programming-programming-all-courses-designing-photoshop-corel-draw-graphic-design-page-maker-dtp-autocad-web-design-html-css",
+      "title": "Implement a full course catalog page that organizes courses into categories and displays course cards/lists. Include at minimum these categories and example items from the user: Basic computer courses (DCA, ADCA, MS-OFFICE, Data Entry, Typing, Spoken English), Programming (Programming all courses), Designing (Photoshop, Corel Draw, Graphic Design, Page Maker DTP, AutoCAD, Web Design, HTML, CSS).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-enquiry-form-that-allows-prospective-students-to-submit-enquiries-the-form-must-collect-at-least-name-phone-number-email-optional-if-phone-is-provided-selected-course-category-optional-and-message-submissions-should-be-stored-in-the-motoko-backend-for-later-retrieval",
+      "title": "Add a Contact/Enquiry form that allows prospective students to submit enquiries. The form must collect at least: name, phone number, email (optional if phone is provided), selected course/category (optional), and message. Submissions should be stored in the Motoko backend for later retrieval.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-define-and-apply-a-coherent-visual-theme-for-smart-desk-across-the-site-colors-typography-spacing-and-components-that-feels-modern-and-trustworthy-for-a-computer-training-institute-avoid-a-blue-purple-default-palette-use-a-distinct-consistent-style",
+      "title": "Define and apply a coherent visual theme for SMART DESK across the site (colors, typography, spacing, and components) that feels modern and trustworthy for a computer training institute. Avoid a blue/purple default palette; use a distinct, consistent style.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-static-images-logo-and-hero-banner-to-the-project-and-use-them-in-the-ui-stored-under-frontend-public-assets-generated",
+      "title": "Add generated static images (logo and hero banner) to the project and use them in the UI (stored under frontend/public/assets/generated).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-official-smart-desk-website-link-www-smartdesk-in-to-the-shared-institute-details-content-and-display-it-as-a-clickable-external-link-opens-in-a-new-tab-anywhere-the-institute-contact-details-are-shown-at-minimum-site-footer-and-contact-page",
+      "title": "Add the official SMART DESK website link \"www.smartdesk.in\" to the shared institute details content and display it as a clickable external link (opens in a new tab) anywhere the institute contact details are shown (at minimum: Site Footer and Contact page).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-institute-website-domain-everywhere-it-is-displayed-linked-to-use-exactly-www-smartdesk7-com-replacing-the-previous-value-www-smartdesk-in-using-the-centralized-institute-details-content-so-the-footer-and-contact-page-website-link-update-consistently",
+      "title": "Update the institute website domain everywhere it is displayed/linked to use exactly \"www.smartdesk7.com\" (replacing the previous value \"www.smartdesk.in\") using the centralized institute details content so the footer and Contact page website link update consistently.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-two-user-uploaded-images-sdph-1-jpg-pamphlet-and-1000-f-755840623-3juwwai0idvb5xomciqvuzmpyflohd3m-1-jpg-into-the-frontend-as-static-assets-and-display-them-on-the-website-in-a-dedicated-section-on-the-home-page",
+      "title": "Add the two user-uploaded images (\"SDPH-1.jpg\" pamphlet and \"1000_F_755840623_3JuwWAI0IdvB5xOmCIqvUZmPyfLoHd3M-1.jpg\") into the frontend as static assets and display them on the website in a dedicated section on the Home page.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build a full course-listing website for SMART DESK computer training institute",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add Contact/Enquiry section (contact form) and display phone numbers and email",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Include institute address/location details on the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add course catalog organized by categories (basic computer, programming, designing, etc.)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Update displayed/linked website domain to www.smartdesk7.com (replace www.smartdesk.in)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add the provided pamphlet and image to the website (upload/store assets and display them on relevant pages)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "SMART DESK",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

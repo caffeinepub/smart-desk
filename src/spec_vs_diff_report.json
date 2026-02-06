@@ -1,0 +1,34 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-06T06:04:19.151Z",
+  "summary": "REQ-8 is partially implemented: the centralized website domain in instituteDetails.ts is updated to www.smartdesk7.com, but the diff summary does not provide direct evidence that the Site Footer and Contact page links use https://www.smartdesk7.com and open in a new tab. REQ-9 appears incomplete: Home page changes are indicated, but the two image files are not added anywhere under a public static assets path in the provided diff summary.",
+  "missing_requirements": [
+    {
+      "id": "REQ-8",
+      "requirement": "The website link shown in the Site Footer opens https://www.smartdesk7.com in a new tab; the website link shown on the Contact page opens https://www.smartdesk7.com in a new tab (using the centralized institute details).",
+      "reason": "Only the centralized value is shown updated; no diff evidence is provided for frontend/src/components/site/SiteFooter.tsx or frontend/src/pages/ContactPage.tsx link href/target behavior.",
+      "evidence": [
+        "frontend/src/content/instituteDetails.ts",
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "requirement": "Add the two uploaded images as static assets under a public path and ensure they load correctly in the browser.",
+      "reason": "The diff shows no added files, so the uploaded images (SDPH-1.jpg and 1000_F_755840623_3JuwWAI0IdvB5xOmCIqvUZmPyfLoHd3M-1.jpg) are not present under frontend/public (or similar) per the provided summary.",
+      "evidence": [
+        "<file-diff>: ADDED FILES: none",
+        "frontend/src/pages/HomePage.tsx (truncated)"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.7,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/content/instituteDetails.ts",
+    "frontend/src/pages/HomePage.tsx",
+    "project_state.json"
+  ]
+}

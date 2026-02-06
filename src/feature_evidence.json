@@ -1,0 +1,43 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-institute-website-domain-everywhere-it-is-displayed-linked-to-use-exactly-www-smartdesk7-com-replacing-the-previous-value-www-smartdesk-in-using-the-centralized-institute-details-content-so-the-footer-and-contact-page-website-link-update-consistently",
+      "featureTitle": "Update the institute website domain everywhere it is displayed/linked to use exactly \"www.smartdesk7.com\" (replacing the previous value \"www.smartdesk.in\") using the centralized institute details content so the footer and Contact page website link update consistently.",
+      "files": [
+        "frontend/src/content/instituteDetails.ts"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-the-two-user-uploaded-images-sdph-1-jpg-pamphlet-and-1000-f-755840623-3juwwai0idvb5xomciqvuzmpyflohd3m-1-jpg-into-the-frontend-as-static-assets-and-display-them-on-the-website-in-a-dedicated-section-on-the-home-page",
+      "featureTitle": "Add the two user-uploaded images (\"SDPH-1.jpg\" pamphlet and \"1000_F_755840623_3JuwWAI0IdvB5xOmCIqvUZmPyfLoHd3M-1.jpg\") into the frontend as static assets and display them on the website in a dedicated section on the Home page.",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
